@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <h1><u>Expense Manager</u></h1>
+    <div class="container">
+    <table class="form-table">
+        <tr>
+            <td>
+                <label for="expense-type">Expense Type:</label>
+                <select id="expense-type">
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                </select>
+            </td>
+            <td>
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="expense-date">Expense Date:</label>
+                <input type="date" id="expense-date">
+            </td>
+            <td>
+                <label for="expense-amount">Expense Amount:</label>
+                <input type="number" id="expense-amount">
+            </td>
+        </tr>
+    </table>
+    <div class="button-container">
+        <button id="add-expense">Add Expense</button>
+    </div>
+    <table id="expense-table">
+        <thead>
+            <tr>
+                <th>Expense Type</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="expense-list">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><b>Total:</b></td>
+                <td id="total-amount">0</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+
+    <script src="expense.js"></script>
+</body>
+</html>
