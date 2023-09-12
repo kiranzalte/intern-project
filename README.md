@@ -1,2 +1,2 @@
 # intern-project
-https://stackblitz.com/edit/web-platform-q47eqg?embed=1&file=expense.html
+https://stackblitz.com/edit/web-platform-mo8yyk?embed=1&file=index.html
